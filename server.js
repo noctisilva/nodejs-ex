@@ -99,7 +99,8 @@ app.get('/lalal', function (req, res) {
   }
   if (db) {
     db.collection('counts').count(function(err, count ){
-      console.log("poop");
+      console.log('poop');
+      res.send('What is up nuggets!');
     });
   } else {
     res.send('{ pageCount: -1 }');
